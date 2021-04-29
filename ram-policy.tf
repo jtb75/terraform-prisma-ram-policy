@@ -11,6 +11,7 @@ resource "prismacloud_policy" "ram" {
         }
         rule_type = "Config"
     }
+    
     labels = [
         "test"
     ]
