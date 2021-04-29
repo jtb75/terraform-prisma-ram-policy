@@ -5,8 +5,9 @@ resource "prismacloud_policy" "ram" {
     rule {
         name = "Alibaba Cloud RAM password retry constraint policy is disabled"
         parameters = {
-        "savedSearch": "true",
-          "withIac": "false",
+            criteria = "9ec9839c-31b5-42f6-897d-ab13e9204db6"
+            "savedSearch": "true",
+            "withIac": "false",
         }
         rule_type = "Config"
     }
