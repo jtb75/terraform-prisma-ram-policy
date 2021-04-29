@@ -3,8 +3,13 @@ resource "prismacloud_policy" "ram" {
     policy_type = "config"
     cloud_type = "alibaba"
     rule {
-        labels = [
-            "test"
-        ]
+        parameters = {
+        "savedSearch": "true",
+          "withIac": "false",
+        }
     }
+    labels = [
+        "test"
+    ]
+    rule_type = "Config"
 }
